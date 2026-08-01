@@ -106,7 +106,7 @@ module "blog_autoscaling" {
 
   traffic_source_attachments = {
     blog_alb = {
-      traffic_source_identifier = aws_lb_target_group.arn
+      traffic_source_identifier = aws_lb_target_group.blog.arn
     }
   }
 }
